@@ -6,3 +6,37 @@
     text-align: center;
     width: 25%;
 }
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 0 4;
+}
+
+.col{
+    flex-basis: 25%;
+    max-width: 25%;
+    padding: 0 4;
+   box-sizing: border-box;
+}
+img{
+    align-items: center;
+    width: 100%;
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 800px){
+    .col{
+        max-width: 50%;
+        flex-basis: 50%;
+    }
+}
+@media screen and (max-width: 600px){
+.col{
+
+    max-width: 100%;
+    flex-basis: 100%;
+}
+}
+    
